@@ -57,18 +57,12 @@ public class age extends Activity {
 
         mInterstitialAd = new InterstitialAd(this); // interstitial ad
 
-     //   mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+       mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         // // sample
         // test
         // AD
 
-        mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059"); // WARNING
-        // !!!!!->
-        // My
-        // OWN
-        // f**kin
-        // AD
-        // id
+      
 
         requestNewInterstitial();
 
