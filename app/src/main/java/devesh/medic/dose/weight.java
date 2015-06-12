@@ -1,0 +1,186 @@
+package devesh.medic.dose;
+
+import android.app.ActionBar;
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.TextView;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+
+public class weight extends Activity {
+
+    public String weight;
+    public String ad_dose;
+    public String ans;
+
+    InterstitialAd mInterstitialAd;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.weight);
+        this.getWindow().setSoftInputMode(
+                WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        ActionBar bar = getActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E1BEE7")));
+
+
+        	AdView mAdView = (AdView) findViewById(R.id.adView);
+        	AdRequest adRequest = new AdRequest.Builder().build();
+        	mAdView.loadAd(adRequest);
+
+
+        mInterstitialAd = new InterstitialAd(this);
+
+     //   mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");   //sample test AD
+
+          mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059");      // WARNING !!!!!-> My OWN f**kin AD id
+
+        requestNewInterstitial();
+
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                requestNewInterstitial();
+                finish();
+            }
+        });
+
+    }
+
+    private void requestNewInterstitial() {
+        AdRequest adRequest = new AdRequest.Builder()
+                //       .addTestDevice("YOUR_DEVICE_HASH")
+                .build();
+
+        mInterstitialAd.loadAd(adRequest);
+    }
+
+
+    public void reset(View v) {
+        final EditText age_val = (EditText) findViewById(R.id.editText1);
+        final EditText ad_val = (EditText) findViewById(R.id.editText2);
+        final TextView tx = (TextView) findViewById(R.id.textView6);
+        age_val.setText("0");
+        ad_val.setText("0");
+        tx.setText("");
+
+    }
+
+    public void age_c(View view) {
+
+        Intent age = new Intent(this, age.class);
+        startActivity(age);
+        finish();
+    }
+
+    public void kg() {
+        final TextView tx = (TextView) findViewById(R.id.textView6);
+        final EditText age_val = (EditText) findViewById(R.id.editText1);
+        weight = age_val.getText().toString();
+        final EditText ad_val = (EditText) findViewById(R.id.editText2);
+        ad_dose = ad_val.getText().toString();
+        double num;
+        double weight1 = Double.parseDouble(weight);
+
+        double de;
+        double ad_dose1 = Double.parseDouble(ad_dose);
+
+        num = weight1 / 70;
+        de = num * ad_dose1;
+
+        ans = String.valueOf(de);
+
+        tx.setText("Accurate Dosage is " + ans);
+
+    }
+
+    public void pound() {
+        final TextView tx = (TextView) findViewById(R.id.textView6);
+        final EditText age_val = (EditText) findViewById(R.id.editText1);
+        weight = age_val.getText().toString();
+        final EditText ad_val = (EditText) findViewById(R.id.editText2);
+        ad_dose = ad_val.getText().toString();
+        double num;
+        double pound1 = Double.parseDouble(weight);
+        double de;
+        double ad_dose1 = Double.parseDouble(ad_dose);
+
+        num = pound1 / 150;
+        de = num * ad_dose1;
+
+        ans = String.valueOf(de);
+
+        tx.setText("Accurate Dosage is " + ans);
+
+    }
+
+    public void calc_p(View v) {
+        RadioButton but = (RadioButton) findViewById(R.id.radio0);
+        RadioButton but1 = (RadioButton) findViewById(R.id.radio1);
+
+        if (but.isChecked()) {
+            kg();
+        }
+        if (but1.isChecked()) {
+            pound();
+        }
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //    Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // action with ID action_refresh was selected
+            case R.id.about:
+                Intent ab = new Intent(this, about.class);
+                startActivity(ab);
+                break;
+
+            case R.id.search:
+                Intent abc = new Intent(this, drug_search.class);
+                startActivity(abc);
+                break;
+
+            default:
+                break;
+        }
+
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            finish();
+        }
+    }
+
+
+}

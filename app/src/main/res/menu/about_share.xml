@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.pharmadosecalculator.MainActivity">
+    <item
+        android:id="@+id/follo"
+
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="Follow me on " />
+    <item
+        android:id="@+id/fb_pg"
+        android:icon="@drawable/fb"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="Follow me on Facebook" />
+    <item
+        android:id="@+id/google_plus_share"
+        android:icon="@drawable/gplus"
+        android:orderInCategory="300"
+        android:showAsAction="always"
+        android:title="Follow me on google plus" />
+
+</menu>   
+
+
