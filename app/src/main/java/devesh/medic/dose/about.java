@@ -12,6 +12,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 public class about extends Activity {
 
@@ -25,12 +28,18 @@ public class about extends Activity {
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#9C27B0")));
 
 
-        //	AdView mAdView = (AdView) findViewById(R.id.adView);
-        //AdRequest adRequest = new AdRequest.Builder().build();
-        //	mAdView.loadAd(adRequest);
+        	AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        	mAdView.loadAd(adRequest);
 
     }
+public void visit(View v){
+    Intent intent = new Intent(Intent.ACTION_VIEW);
+    intent.setData(Uri.parse("http://ephrine.blogspot.com")); //Google play store
+    startActivity(intent);
 
+
+}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,7 +57,7 @@ public class about extends Activity {
             case R.id.fb_pg:
 
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://www.facebook.com/deveshappsstore")); //Google play store
+                intent.setData(Uri.parse("https://www.facebook.com/ephrinepharma")); //Google play store
                 startActivity(intent);
 
                 break;

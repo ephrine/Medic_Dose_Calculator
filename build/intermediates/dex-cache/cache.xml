@@ -2,6 +2,111 @@
 <items version="2" >
 
     <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-35381523ae3645ffccc8392be9cca25f3386dd97.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-e51263daae415dc9b9b8b8731ca6fc7a6ca9883a.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-7ec408207664802323067e3e50e5cc9e2220156b.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-3651b348cce80236454f689d82fda2c6fa8fe84a.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-11b88d26b63a0dccba140fa23cac0fed6d009849.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-a5b16fd86551ed07a96276de3de314f5b38fb573.jar" />
+    </item>
+    <item
+        jar="E:\Devesh inc\Devesh app world\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\support-annotations-22.1.1-878bb4b5d82360e43e4789463d2187118970e8c6.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-289ab699c9b8e9f13c5152f71bc57ac9c92bfda1.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-82f0e8e859652be84b56b8246e632e8943279aea.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-826400330182e90c2151cba8f1b34c53a704b105.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-0b81c555d5398284764c9be4635153feab025a8c.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-7e9fdd901b4cad3c1746852fa66ae2581f870696.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-6b85b7aa604cbdbca31f12570eddfc3897afc91c.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-634ba9fba86d53ca85d270ef87957e877925ba4a.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-5ea5728313600fe6915a34b70d78643c00abab22.jar" />
+    </item>
+    <item
         jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -16,74 +121,18 @@
         <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-3e891e7801cbc4ff2cf32e1e2d79d1c1a9a83b65.jar" />
     </item>
     <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-e1187bb8695efeafa12488c03274cb59ec48e19d.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-6b85b7aa604cbdbca31f12570eddfc3897afc91c.jar" />
-    </item>
-    <item
-        jar="E:\Devesh inc\Devesh app world\adt-bundle-windows-x86-20140702\adt-bundle-windows-x86-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\support-annotations-22.1.1-878bb4b5d82360e43e4789463d2187118970e8c6.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-82f0e8e859652be84b56b8246e632e8943279aea.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-fe4d751141408faa0829406f4c6590453b4e1a6b.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-3651b348cce80236454f689d82fda2c6fa8fe84a.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-7ec408207664802323067e3e50e5cc9e2220156b.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-826400330182e90c2151cba8f1b34c53a704b105.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-7e9fdd901b4cad3c1746852fa66ae2581f870696.jar" />
-    </item>
-    <item
         jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
         <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\internal_impl-22.1.1-0da5e4db58684f82b6fa04916156880e8efcd38c.jar" />
+    </item>
+    <item
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-e1187bb8695efeafa12488c03274cb59ec48e19d.jar" />
     </item>
     <item
         jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
@@ -93,11 +142,11 @@
         <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-ca3a4ec97751ca63eb9dbcac0a3108f0a683bdd2.jar" />
     </item>
     <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-11b88d26b63a0dccba140fa23cac0fed6d009849.jar" />
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-f46219f5ceb7d3c122d8a4b6b9a019c73de9a516.jar" />
     </item>
     <item
         jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
@@ -107,60 +156,11 @@
         <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-57d4e21cfaaf7c3aaab07dde9635e0d8e78aab9a.jar" />
     </item>
     <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
+        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-634ba9fba86d53ca85d270ef87957e877925ba4a.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-e51263daae415dc9b9b8b8731ca6fc7a6ca9883a.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-5ea5728313600fe6915a34b70d78643c00abab22.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-a5b16fd86551ed07a96276de3de314f5b38fb573.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-289ab699c9b8e9f13c5152f71bc57ac9c92bfda1.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-35381523ae3645ffccc8392be9cca25f3386dd97.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-f46219f5ceb7d3c122d8a4b6b9a019c73de9a516.jar" />
-    </item>
-    <item
-        jar="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-0b81c555d5398284764c9be4635153feab025a8c.jar" />
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="E:\Devesh_inc\Android_Development\Project\AndroidStudio\Medic_Dose_Calculator\app\build\intermediates\pre-dexed\release\classes-fe4d751141408faa0829406f4c6590453b4e1a6b.jar" />
     </item>
 
 </items>

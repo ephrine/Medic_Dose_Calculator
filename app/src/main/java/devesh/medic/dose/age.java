@@ -28,6 +28,7 @@ public class age extends Activity {
     public String ad_dose;
     public String ans;
     public String formula;
+    public String result_pg;
     InterstitialAd mInterstitialAd;
 
     @Override
@@ -57,12 +58,12 @@ public class age extends Activity {
 
         mInterstitialAd = new InterstitialAd(this); // interstitial ad
 
-     //   mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
         // // sample
         // test
         // AD
 
-        mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059"); // WARNING
+       // mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059"); // WARNING
         // !!!!!->
         // My
         // OWN
@@ -134,7 +135,14 @@ public class age extends Activity {
 
         ans = String.valueOf(answ);
 
-        tx.setText("Accurate Dosage is " + ans);
+        setContentView(R.layout.result);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView15);
+        TextView r_age=(TextView)findViewById(R.id.textView14);
+        r_age.setText("Child of age "+age);
+        result.setText(ans);
+        //tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -154,7 +162,16 @@ public class age extends Activity {
 
         ans = String.valueOf(de);
 
-        tx.setText("Accurate Dosage is " + ans);
+
+
+       setContentView(R.layout.result);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView15);
+        TextView r_age=(TextView)findViewById(R.id.textView14);
+        r_age.setText("Child of age "+age);
+        result.setText(ans);
+        //tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -176,7 +193,14 @@ public class age extends Activity {
 
         ans = String.valueOf(answ);
 
-        tx.setText("Accurate Dosage is " + ans);
+        setContentView(R.layout.result);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView15);
+        TextView r_age=(TextView)findViewById(R.id.textView14);
+        r_age.setText("Child of age "+age);
+        result.setText(ans);
+        //tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -197,7 +221,14 @@ public class age extends Activity {
 
         ans = String.valueOf(de);
 
-        tx.setText("Accurate Dosage is " + ans);
+        setContentView(R.layout.result);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView15);
+        TextView r_age=(TextView)findViewById(R.id.textView14);
+        r_age.setText("Child of age "+age);
+        result.setText(ans);
+        //tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -219,7 +250,14 @@ public class age extends Activity {
 
         ans = String.valueOf(answ);
 
-        tx.setText("Accurate Dosage is " + ans);
+        setContentView(R.layout.result);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView15);
+        TextView r_age=(TextView)findViewById(R.id.textView14);
+        r_age.setText("Child of age "+age);
+        result.setText(ans);
+        //tx.setText("Accurate Dosage is " + ans);
     }
 
     public void calc_age(View v) {
@@ -291,6 +329,17 @@ public class age extends Activity {
 
     }
 
+    public void closex(View v){
+	result_pg="0";
+     setContentView(R.layout.yf);
+
+    }
+	public void closebt(View v){
+		result_pg="0";
+     setContentView(R.layout.yf);
+
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
@@ -325,12 +374,16 @@ public class age extends Activity {
 
     @Override
     public void onBackPressed() {
-
+if(result_pg=="1"){
+result_pg="0";
+     setContentView(R.layout.yf);
+}else{
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
             finish();
         }
-
-    }
+}
+       }
+	
 }

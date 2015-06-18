@@ -15,8 +15,8 @@ android {
         applicationId "devesh.medic.dose"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 9
-        versionName "1.2.1"
+        versionCode 10
+        versionName "1.2.2"
     }
     buildTypes {
         release {

@@ -25,6 +25,8 @@ public class weight extends Activity {
     public String weight;
     public String ad_dose;
     public String ans;
+	    public String result_pg;
+
 
     InterstitialAd mInterstitialAd;
 
@@ -47,9 +49,9 @@ public class weight extends Activity {
 
         mInterstitialAd = new InterstitialAd(this);
 
-     //   mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");   //sample test AD
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");   //sample test AD
 
-          mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059");      // WARNING !!!!!-> My OWN f**kin AD id
+    //      mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059");      // WARNING !!!!!-> My OWN f**kin AD id
 
         requestNewInterstitial();
 
@@ -107,7 +109,15 @@ public class weight extends Activity {
 
         ans = String.valueOf(de);
 
-        tx.setText("Accurate Dosage is " + ans);
+		 setContentView(R.layout.result_w);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView17);
+        TextView r_weight=(TextView)findViewById(R.id.textView16);
+        r_weight.setText("Child of weight "+weight);
+        result.setText(ans);
+		
+       // tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -127,7 +137,15 @@ public class weight extends Activity {
 
         ans = String.valueOf(de);
 
-        tx.setText("Accurate Dosage is " + ans);
+       setContentView(R.layout.result_w);
+
+        result_pg="1";
+TextView result= (TextView)findViewById(R.id.textView17);
+        TextView r_weight=(TextView)findViewById(R.id.textView16);
+        r_weight.setText("Child of weight "+weight);
+        result.setText(ans);
+		
+       // tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -141,6 +159,17 @@ public class weight extends Activity {
         if (but1.isChecked()) {
             pound();
         }
+
+    }
+	
+	  public void closex(View v){
+	result_pg="0";
+     setContentView(R.layout.weight);
+
+    }
+	public void closebt(View v){
+		result_pg="0";
+     setContentView(R.layout.weight);
 
     }
 
@@ -175,6 +204,10 @@ public class weight extends Activity {
 
     @Override
     public void onBackPressed() {
+	if(result_pg=="1"){
+result_pg="0";
+     setContentView(R.layout.weight);
+}else{
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
         } else {
@@ -182,5 +215,5 @@ public class weight extends Activity {
         }
     }
 
-
+}
 }
