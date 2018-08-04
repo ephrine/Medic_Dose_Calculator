@@ -14,6 +14,7 @@ import android.view.View;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 
 public class about extends Activity {
@@ -27,19 +28,21 @@ public class about extends Activity {
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#9C27B0")));
 
+        MobileAds.initialize(this, getString(R.string.AdMod_app_id));
 
-        	AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        	mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);
 
     }
-public void visit(View v){
-    Intent intent = new Intent(Intent.ACTION_VIEW);
-    intent.setData(Uri.parse("http://ephrine.blogspot.com")); //Google play store
-    startActivity(intent);
+
+    public void visit(View v) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.ephrine.in")); //Google play store
+        startActivity(intent);
 
 
-}
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -57,7 +60,7 @@ public void visit(View v){
             case R.id.fb_pg:
 
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://www.facebook.com/ephrinepharma")); //Google play store
+                intent.setData(Uri.parse("https://www.facebook.com/ephrineapps")); //Google play store
                 startActivity(intent);
 
                 break;

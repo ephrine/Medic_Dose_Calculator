@@ -1,78 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <include
+        android:id="@+id/include1"
+        layout="@layout/yf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        layout="@layout/yf"
-        android:id="@+id/include1"
 
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
     <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:id="@+id/imageView3"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:src="@drawable/ans_bg" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/imageView4"
-        android:layout_alignTop="@+id/imageView3"
-        android:layout_alignRight="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/imageView3"
-        android:src="@android:drawable/ic_delete"
-        android:onClick="closex" />
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:onClick="closex"
+        android:src="@android:drawable/ic_delete" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="The Paedritric dose for"
         android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/textView14"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="The Paedritric dose for"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Child of ---age"
         android:id="@+id/textView14"
-        android:layout_below="@+id/imageView4"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="123"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:text="Child of ---age"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
         android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="123"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
+        android:id="@+id/button4"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Close"
-        android:id="@+id/button4"
         android:layout_alignBottom="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:onClick="closebt" />
+        android:onClick="closebt"
+        android:text="Close" />
 
     <TextView
+        android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="mg/g/ml units depends upon adult dose"
-        android:id="@+id/textView18"
         android:layout_below="@+id/textView15"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="mg/g/ml units depends upon adult dose"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

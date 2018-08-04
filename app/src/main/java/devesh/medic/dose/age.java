@@ -21,6 +21,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 public class age extends Activity {
 
@@ -41,7 +42,7 @@ public class age extends Activity {
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E1BEE7")));
 
         WebView myWebView = (WebView) findViewById(R.id.webView1);
-         myWebView.loadUrl("https://sites.google.com/site/medicdosecalc/tracker");
+        myWebView.loadUrl("https://sites.google.com/site/medicdosecalc/tracker");
         myWebView = (WebView) findViewById(R.id.webView1);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -50,7 +51,8 @@ public class age extends Activity {
         // AdMob---------------------------------------------------------------------------------
 
 
-      //   Banner ad
+        //   Banner ad
+        MobileAds.initialize(this, getString(R.string.AdMod_app_id));
 
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -58,18 +60,7 @@ public class age extends Activity {
 
         mInterstitialAd = new InterstitialAd(this); // interstitial ad
 
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        // // sample
-        // test
-        // AD
-
-       // mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059"); // WARNING
-        // !!!!!->
-        // My
-        // OWN
-        // f**kin
-        // AD
-        // id
+        mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));
 
         requestNewInterstitial();
 
@@ -94,7 +85,6 @@ public class age extends Activity {
 
     // Google Analytics code
     // -----------------------------------------------------------------------------------
-
 
 
     // My app main
@@ -137,10 +127,10 @@ public class age extends Activity {
 
         setContentView(R.layout.result);
 
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView15);
-        TextView r_age=(TextView)findViewById(R.id.textView14);
-        r_age.setText("Child of age "+age);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView15);
+        TextView r_age = (TextView) findViewById(R.id.textView14);
+        r_age.setText("Child of age " + age);
         result.setText(ans);
         //tx.setText("Accurate Dosage is " + ans);
 
@@ -163,13 +153,12 @@ TextView result= (TextView)findViewById(R.id.textView15);
         ans = String.valueOf(de);
 
 
+        setContentView(R.layout.result);
 
-       setContentView(R.layout.result);
-
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView15);
-        TextView r_age=(TextView)findViewById(R.id.textView14);
-        r_age.setText("Child of age "+age);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView15);
+        TextView r_age = (TextView) findViewById(R.id.textView14);
+        r_age.setText("Child of age " + age);
         result.setText(ans);
         //tx.setText("Accurate Dosage is " + ans);
 
@@ -195,10 +184,10 @@ TextView result= (TextView)findViewById(R.id.textView15);
 
         setContentView(R.layout.result);
 
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView15);
-        TextView r_age=(TextView)findViewById(R.id.textView14);
-        r_age.setText("Child of age "+age);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView15);
+        TextView r_age = (TextView) findViewById(R.id.textView14);
+        r_age.setText("Child of age " + age);
         result.setText(ans);
         //tx.setText("Accurate Dosage is " + ans);
 
@@ -223,10 +212,10 @@ TextView result= (TextView)findViewById(R.id.textView15);
 
         setContentView(R.layout.result);
 
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView15);
-        TextView r_age=(TextView)findViewById(R.id.textView14);
-        r_age.setText("Child of age "+age);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView15);
+        TextView r_age = (TextView) findViewById(R.id.textView14);
+        r_age.setText("Child of age " + age);
         result.setText(ans);
         //tx.setText("Accurate Dosage is " + ans);
 
@@ -252,10 +241,10 @@ TextView result= (TextView)findViewById(R.id.textView15);
 
         setContentView(R.layout.result);
 
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView15);
-        TextView r_age=(TextView)findViewById(R.id.textView14);
-        r_age.setText("Child of age "+age);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView15);
+        TextView r_age = (TextView) findViewById(R.id.textView14);
+        r_age.setText("Child of age " + age);
         result.setText(ans);
         //tx.setText("Accurate Dosage is " + ans);
     }
@@ -329,14 +318,15 @@ TextView result= (TextView)findViewById(R.id.textView15);
 
     }
 
-    public void closex(View v){
-	result_pg="0";
-     setContentView(R.layout.yf);
+    public void closex(View v) {
+        result_pg = "0";
+        setContentView(R.layout.yf);
 
     }
-	public void closebt(View v){
-		result_pg="0";
-     setContentView(R.layout.yf);
+
+    public void closebt(View v) {
+        result_pg = "0";
+        setContentView(R.layout.yf);
 
     }
 
@@ -356,7 +346,7 @@ TextView result= (TextView)findViewById(R.id.textView15);
                 Intent ab = new Intent(this, about.class);
                 startActivity(ab);
                 break;
-            case R.id.search:
+  /*          case R.id.search:
                Intent abc = new Intent(this, drug_search.class);
                 startActivity(abc);
                 break;
@@ -364,7 +354,7 @@ TextView result= (TextView)findViewById(R.id.textView15);
                 Intent pro = new Intent(this, pro.class);
                 startActivity(pro);
                 break;
-
+*/
             default:
                 break;
         }
@@ -374,16 +364,16 @@ TextView result= (TextView)findViewById(R.id.textView15);
 
     @Override
     public void onBackPressed() {
-if(result_pg=="1"){
-result_pg="0";
-     setContentView(R.layout.yf);
-}else{
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
+        if (result_pg == "1") {
+            result_pg = "0";
+            setContentView(R.layout.yf);
         } else {
-            finish();
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                finish();
+            }
         }
-}
-       }
-	
+    }
+
 }

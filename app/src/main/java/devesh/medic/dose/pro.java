@@ -16,7 +16,6 @@ import android.view.WindowManager;
 public class pro extends Activity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +27,12 @@ public class pro extends Activity {
 
 
     }
-    public void pro(View v){
+
+    public void pro(View v) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
 
         intent.setData(Uri.parse("market://details?id=devesh.medic.plus")); //Google play store
         startActivity(intent);
     }
 
-    }
+}

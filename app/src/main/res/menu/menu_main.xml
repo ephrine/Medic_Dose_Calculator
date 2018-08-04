@@ -2,19 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="devesh.medic.dose.MainActivity">
 
-    <item
-        android:id="@+id/pro"
-        android:icon="@drawable/pro"
-        android:orderInCategory="1"
-        android:showAsAction="always"
-        android:title="Get premium" />
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/search"
-        android:orderInCategory="2"
-        android:showAsAction="always"
-        android:title="search" />
-
 
     <item
         android:id="@+id/about"

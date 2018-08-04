@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Version: 1.2.2" />
+                    android:text="Version: 1.2.3" />
 
 
                 <Button
@@ -66,13 +66,13 @@
                     android:text="Rate 5 Stars if you like my app" />
 
                 <Button
+                    android:id="@+id/button6"
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Visit our Webiste"
-                    android:id="@+id/button6"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="visit" />
+                    android:onClick="visit"
+                    android:text="Visit our Webiste" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -89,11 +89,11 @@
 
 
                 <TextView
+                    android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Some tradmark,logos,brandnames used in app maybe belongs to their respected owners  "
-                    android:id="@+id/textView10" />
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -101,28 +101,28 @@
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="A product of"
                     android:id="@+id/textView20"
-                    android:layout_gravity="center_horizontal" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Ephrine Apps"
+                    android:layout_gravity="center_horizontal"
+                    android:text="A product of"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
                     android:id="@+id/textView21"
-                    android:layout_gravity="center_horizontal" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Powered by Devesh"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ephrine Apps"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
                     android:id="@+id/textView22"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Powered by Devesh"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
 
                 <ProgressBar
                     android:id="@+id/progressBar1"

@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
 
     android:background="@drawable/bg">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/linearLayout">
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Quick search on drugs.com"
-            android:id="@+id/textView"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:text="Quick search on drugs.com"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -30,74 +31,74 @@
             android:weightSum="1">
 
             <EditText
+                android:id="@+id/drug_search_box"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/drug_search_box"
-                android:layout_weight="0.81"
+                android:layout_toEndOf="@+id/progressBar"
                 android:layout_toLeftOf="@+id/button"
                 android:layout_toRightOf="@+id/progressBar"
-                android:layout_toEndOf="@+id/progressBar" />
+                android:layout_weight="0.81" />
 
             <ImageView
+                android:id="@+id/button"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:text="Search"
-android:onClick="drug_search"
-                android:id="@+id/button"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/search" />
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:onClick="drug_search"
+                android:src="@drawable/search"
+                android:text="Search" />
 
             <ProgressBar
+                android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleLarge"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/progressBar"
-                android:layout_gravity="center_horizontal"
-                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/drug_search_box"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignBottom="@+id/drug_search_box" />
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal" />
 
 
         </RelativeLayout>
 
         <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView" >
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <WebView
+                    android:id="@+id/webView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/webView" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
         </ScrollView>
 
         <TextView
+            android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Note: 3rd partie website/websites contains Tradmark, names, logos, patients, formulation etc, which may be copyrighted by their respected owners."
-            android:id="@+id/textView11" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/linearLayout">
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
@@ -106,7 +107,7 @@ android:onClick="drug_search"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/banner_ad_unit_id3"/>
+            ads:adUnitId="@string/banner_ad_unit_id3" />
 
     </LinearLayout>
 

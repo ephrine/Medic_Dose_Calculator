@@ -19,13 +19,14 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 public class weight extends Activity {
 
     public String weight;
     public String ad_dose;
     public String ans;
-	    public String result_pg;
+    public String result_pg;
 
 
     InterstitialAd mInterstitialAd;
@@ -42,16 +43,16 @@ public class weight extends Activity {
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E1BEE7")));
 
 
-        	AdView mAdView = (AdView) findViewById(R.id.adView);
-        	AdRequest adRequest = new AdRequest.Builder().build();
-        	mAdView.loadAd(adRequest);
+        MobileAds.initialize(this, getString(R.string.AdMod_app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         mInterstitialAd = new InterstitialAd(this);
 
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");   //sample test AD
+        mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));   //sample test AD
 
-    //      mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059");      // WARNING !!!!!-> My OWN f**kin AD id
 
         requestNewInterstitial();
 
@@ -109,15 +110,15 @@ public class weight extends Activity {
 
         ans = String.valueOf(de);
 
-		 setContentView(R.layout.result_w);
+        setContentView(R.layout.result_w);
 
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView17);
-        TextView r_weight=(TextView)findViewById(R.id.textView16);
-        r_weight.setText("Child of weight "+weight);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView17);
+        TextView r_weight = (TextView) findViewById(R.id.textView16);
+        r_weight.setText("Child of weight " + weight);
         result.setText(ans);
-		
-       // tx.setText("Accurate Dosage is " + ans);
+
+        // tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -137,15 +138,15 @@ TextView result= (TextView)findViewById(R.id.textView17);
 
         ans = String.valueOf(de);
 
-       setContentView(R.layout.result_w);
+        setContentView(R.layout.result_w);
 
-        result_pg="1";
-TextView result= (TextView)findViewById(R.id.textView17);
-        TextView r_weight=(TextView)findViewById(R.id.textView16);
-        r_weight.setText("Child of weight "+weight);
+        result_pg = "1";
+        TextView result = (TextView) findViewById(R.id.textView17);
+        TextView r_weight = (TextView) findViewById(R.id.textView16);
+        r_weight.setText("Child of weight " + weight);
         result.setText(ans);
-		
-       // tx.setText("Accurate Dosage is " + ans);
+
+        // tx.setText("Accurate Dosage is " + ans);
 
     }
 
@@ -161,15 +162,16 @@ TextView result= (TextView)findViewById(R.id.textView17);
         }
 
     }
-	
-	  public void closex(View v){
-	result_pg="0";
-     setContentView(R.layout.weight);
+
+    public void closex(View v) {
+        result_pg = "0";
+        setContentView(R.layout.weight);
 
     }
-	public void closebt(View v){
-		result_pg="0";
-     setContentView(R.layout.weight);
+
+    public void closebt(View v) {
+        result_pg = "0";
+        setContentView(R.layout.weight);
 
     }
 
@@ -190,11 +192,11 @@ TextView result= (TextView)findViewById(R.id.textView17);
                 startActivity(ab);
                 break;
 
-            case R.id.search:
+  /*          case R.id.search:
                 Intent abc = new Intent(this, drug_search.class);
                 startActivity(abc);
                 break;
-
+*/
             default:
                 break;
         }
@@ -204,16 +206,16 @@ TextView result= (TextView)findViewById(R.id.textView17);
 
     @Override
     public void onBackPressed() {
-	if(result_pg=="1"){
-result_pg="0";
-     setContentView(R.layout.weight);
-}else{
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
+        if (result_pg == "1") {
+            result_pg = "0";
+            setContentView(R.layout.weight);
         } else {
-            finish();
+            if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+            } else {
+                finish();
+            }
         }
-    }
 
-}
+    }
 }

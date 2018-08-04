@@ -37,7 +37,7 @@ public class drug_search extends Activity {
         setContentView(R.layout.drug_search);
 
         ProgressBar progress = (ProgressBar) findViewById(R.id.progressBar);
-progress.setVisibility(View.INVISIBLE);
+        progress.setVisibility(View.INVISIBLE);
 
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -45,31 +45,31 @@ progress.setVisibility(View.INVISIBLE);
 
         mInterstitialAd = new InterstitialAd(this);
 
-  //      mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");   //sample test AD
+        //      mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");   //sample test AD
 
-    //  mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059");      // WARNING !!!!!-> My OWN f**kin AD id
+        //  mInterstitialAd.setAdUnitId("ca-app-pub-6702661245453687/9040173059");      // WARNING !!!!!-> My OWN f**kin AD id
 
-    //    requestNewInterstitial();
+        //    requestNewInterstitial();
 
 
-     //   mInterstitialAd.setAdListener(new AdListener() {
-     //       @Override
-      //      public void onAdClosed() {
-       //         requestNewInterstitial();
-      //          finish();
-      //     }
-     //   }};
+        //   mInterstitialAd.setAdListener(new AdListener() {
+        //       @Override
+        //      public void onAdClosed() {
+        //         requestNewInterstitial();
+        //          finish();
+        //     }
+        //   }};
 
 
     }
 
-  //  private void requestNewInterstitial() {
- //       AdRequest adRequest = new AdRequest.Builder()
-                //       .addTestDevice("YOUR_DEVICE_HASH")
-   //             .build();
+    //  private void requestNewInterstitial() {
+    //       AdRequest adRequest = new AdRequest.Builder()
+    //       .addTestDevice("YOUR_DEVICE_HASH")
+    //             .build();
 //
-   //     mInterstitialAd.loadAd(adRequest);
-  //  }
+    //     mInterstitialAd.loadAd(adRequest);
+    //  }
 
 
     public void drug_search(View v) {
@@ -87,6 +87,7 @@ progress.setVisibility(View.INVISIBLE);
         myWebView.setWebViewClient(new MyWebViewClient());
 
     }
+
     private class MyWebViewClient extends WebViewClient {
 
         ProgressBar progress = (ProgressBar) findViewById(R.id.progressBar);
@@ -95,13 +96,12 @@ progress.setVisibility(View.INVISIBLE);
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
 
 
-
             // Otherwise, the link is not for a page on my site, so launch another Activity that handles URLs
 
-       //     if (mInterstitialAd.isLoaded()) {
-        //        mInterstitialAd.show();
-       //     } else {
-       //     }
+            //     if (mInterstitialAd.isLoaded()) {
+            //        mInterstitialAd.show();
+            //     } else {
+            //     }
             Context context = getApplicationContext();
             CharSequence text = "Opening in web browser";
             int duration = Toast.LENGTH_SHORT;
@@ -132,7 +132,6 @@ progress.setVisibility(View.INVISIBLE);
 
 
     }
-
 
 
 }
