@@ -51,9 +51,7 @@ public class weight extends Activity {
 
         mInterstitialAd = new InterstitialAd(this);
 
-        mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));   //sample test AD
-
-
+        mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));  
         requestNewInterstitial();
 
 
@@ -217,5 +215,10 @@ public class weight extends Activity {
             }
         }
 
+<<<<<<< HEAD
     }
 }
+=======
+}
+}
+>>>>>>> e7a8b0ea3bf368e63b499a4621120c95feac893e

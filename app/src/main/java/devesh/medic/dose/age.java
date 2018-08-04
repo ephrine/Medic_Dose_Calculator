@@ -62,6 +62,9 @@ public class age extends Activity {
 
         mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));
 
+
+      
+
         requestNewInterstitial();
 
         mInterstitialAd.setAdListener(new AdListener() {
