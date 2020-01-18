@@ -1,38 +1,67 @@
 apply plugin: 'com.android.application'
 
+
+
+ext.keypassword = System.getenv('sign.key.password')
+
+ext.keyalias = System.getenv('sign.key.alias')
+
+ext.keypath = System.getenv('sign.key.path')
+
+def f = new File('app/google-services.json')
+if (!f.exists()) {
+    new URL(System.getenv('google.services.json')).withInputStream{ i -> f.withOutputStream{ it << i }}
+}
+
 android {
     signingConfigs {
         config {
-            keyPassword 'deveshcc'
-            storeFile file('E:/Devesh inc/Android Development/key')
-            storePassword 'deveshcc'
-            keyAlias 'devandroidkey'
+            keyPassword keypassword
+            storeFile file(keypath)
+            storePassword keypassword
+            keyAlias keyalias
         }
     }
-    compileSdkVersion 27
-    buildToolsVersion "28.0.1"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "devesh.medic.dose"
-        minSdkVersion 14
-        targetSdkVersion 27
-        versionCode 11
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 13
         versionName "1.2.3"
+
+        resValue "string", "AdMod_app_id", "\"" +System.getenv('AdMod.app.id') + "\""
+        resValue "string", "Ad_int_id", "\"" +System.getenv('Ad.int.id') + "\""
+        resValue "string", "banner_ad_unit_id1", "\"" +System.getenv('banner.ad.unit.id1') + "\""
+        resValue "string", "banner_ad_unit_id2", "\"" +System.getenv('banner.ad.unit.id2') + "\""
+        resValue "string", "banner_ad_unit_id3", "\"" +System.getenv('banner.ad.unit.id3') + "\""
+        resValue "string", "ms_appcenter_sec", "\"" +System.getenv('ms.appcenter.id') + "\""
+
+
+
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
-    implementation 'com.google.firebase:firebase-core:16.0.1'
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.google.firebase:firebase-core:+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.0'
     //compile 'com.google.android.gms:play-services:7.0.0'
-    implementation 'com.google.firebase:firebase-crash:16.0.1'
-    implementation 'com.google.firebase:firebase-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-crash:+'
+    implementation 'com.google.firebase:firebase-ads:+'
+
+
+    def appCenterSdkVersion = '2.5.1'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
 }
 
 apply plugin: 'com.google.gms.google-services'

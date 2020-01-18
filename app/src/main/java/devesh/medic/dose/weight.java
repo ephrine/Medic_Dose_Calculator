@@ -20,7 +20,9 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
-
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 public class weight extends Activity {
 
     public String weight;
@@ -42,6 +44,8 @@ public class weight extends Activity {
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E1BEE7")));
 
+        AppCenter.start(getApplication(), getString(R.string.ms_appcenter_sec),
+                Analytics.class, Crashes.class);
 
         MobileAds.initialize(this, getString(R.string.AdMod_app_id));
         AdView mAdView = (AdView) findViewById(R.id.adView);
@@ -49,19 +53,8 @@ public class weight extends Activity {
         mAdView.loadAd(adRequest);
 
 
-        mInterstitialAd = new InterstitialAd(this);
-
-        mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));  
-        requestNewInterstitial();
 
 
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                requestNewInterstitial();
-                finish();
-            }
-        });
 
     }
 
@@ -208,17 +201,14 @@ public class weight extends Activity {
             result_pg = "0";
             setContentView(R.layout.weight);
         } else {
-            if (mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
-            } else {
+
+
                 finish();
-            }
+
         }
 
-<<<<<<< HEAD
+
     }
 }
-=======
-}
-}
->>>>>>> e7a8b0ea3bf368e63b499a4621120c95feac893e
+
+

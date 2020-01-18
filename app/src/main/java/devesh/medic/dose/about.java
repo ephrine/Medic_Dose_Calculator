@@ -16,6 +16,9 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class about extends Activity {
 
@@ -24,9 +27,13 @@ public class about extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
+
         getActionBar().setTitle("");
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#9C27B0")));
+
+        AppCenter.start(getApplication(), getString(R.string.ms_appcenter_sec),
+                Analytics.class, Crashes.class);
 
         MobileAds.initialize(this, getString(R.string.AdMod_app_id));
 

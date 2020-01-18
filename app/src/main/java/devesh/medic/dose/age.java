@@ -22,6 +22,9 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class age extends Activity {
 
@@ -41,11 +44,10 @@ public class age extends Activity {
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#E1BEE7")));
 
-        WebView myWebView = (WebView) findViewById(R.id.webView1);
-        myWebView.loadUrl("https://sites.google.com/site/medicdosecalc/tracker");
-        myWebView = (WebView) findViewById(R.id.webView1);
-        WebSettings webSettings = myWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        AppCenter.start(getApplication(), getString(R.string.ms_appcenter_sec),
+                Analytics.class, Crashes.class);
+
+
 
 
         // AdMob---------------------------------------------------------------------------------
@@ -58,23 +60,23 @@ public class age extends Activity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        mInterstitialAd = new InterstitialAd(this); // interstitial ad
+     //   mInterstitialAd = new InterstitialAd(this); // interstitial ad
 
-        mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));
+    //    mInterstitialAd.setAdUnitId(getString(R.string.Ad_int_id));
 
 
       
 
-        requestNewInterstitial();
+    //    requestNewInterstitial();
 
-        mInterstitialAd.setAdListener(new AdListener() {
+  /*      mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdClosed() {
                 requestNewInterstitial();
                 finish();
             }
         });
-
+*/
     }
 
     private void requestNewInterstitial() {
@@ -371,11 +373,9 @@ public class age extends Activity {
             result_pg = "0";
             setContentView(R.layout.yf);
         } else {
-            if (mInterstitialAd.isLoaded()) {
-                mInterstitialAd.show();
-            } else {
+
                 finish();
-            }
+
         }
     }
 

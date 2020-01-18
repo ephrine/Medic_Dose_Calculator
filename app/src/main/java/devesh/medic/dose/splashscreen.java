@@ -4,7 +4,9 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 public class splashscreen extends Activity {
 
     @Override
@@ -15,6 +17,9 @@ public class splashscreen extends Activity {
         setContentView(R.layout.scr);
         ActionBar actionBar = getActionBar();
         actionBar.hide();
+
+        AppCenter.start(getApplication(), getString(R.string.ms_appcenter_sec),
+                Analytics.class, Crashes.class);
 
 
         Thread background = new Thread() {
